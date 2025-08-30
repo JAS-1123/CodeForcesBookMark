@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Bookmarks",
+  "version": "1.0",
+  "description": "Add custom bookmarks to Codeforces problems and show them in your profile page.",
+  "permissions": ["storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/*"],
+      "js": ["injected.js"]
+    }
+  ]
+}
